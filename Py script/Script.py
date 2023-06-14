@@ -8,7 +8,7 @@ import pandas as ps
 from datetime import datetime
 import matplotlib.pyplot as plt
 # Read the csv path
-df = ps.read_csv('')
+df = ps.read_csv('..\Arsenal 2023\epl_results_2022-23.csv')
 import requests
 df
 
