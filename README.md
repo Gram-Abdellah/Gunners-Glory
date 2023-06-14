@@ -11,5 +11,5 @@ By examining player performance metrics such as goals, assists, clean sheets, an
 
 Gunners' Glory demonstrates the power of data analysis and visualization in gaining valuable insights into sports performance. It is a testament to the importance of data-driven decision-making in the world of football and showcases the potential for analytics to enhance team performance and drive success.
 
-Data source : [Click here]{'https://www.kaggle.com/datasets/evangower/premier-league-2022-2023'}
+Data source : [Click here](https://www.kaggle.com/datasets/evangower/premier-league-2022-2023)
 Tableau Visualization : [Click here](https://public.tableau.com/views/ArsenalseasonStats2324/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
