@@ -7,7 +7,8 @@
 import pandas as ps 
 from datetime import datetime
 import matplotlib.pyplot as plt
-df = ps.read_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Arsenal 23 dataset\epl_results_2022-23.csv')
+# Read the csv path
+df = ps.read_csv('')
 import requests
 df
 
@@ -56,15 +57,15 @@ table_data = ps.read_html(response.text)
 Players = table_data[1]
 GKs = table_data[0]
 print(table)
-Players.to_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Players.csv')
-GKs.to_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\GoalKappers.csv')
+Players.to_csv(r'\Arsenal 2023\Players.csv')
+GKs.to_csv(r'\GoalKappers.csv')
 
 
 # In[79]:
 
 
-players=ps.read_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Players.csv')
-GKs=ps.read_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\GoalKappers.csv')
+players=ps.read_csv(r'\Players.csv')
+GKs=ps.read_csv(r'\GoalKappers.csv')
 players
 
 
@@ -243,7 +244,7 @@ RHC_home
 # Tactical Analysis :
 # What is the most common formation used by Arsenal in the Premier League matches?
 # import data 
-games_stats =ps.read_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Games.csv')
+games_stats =ps.read_csv(r'\Games.csv')
 def most_frequent(Array):
     counter = 0
     num = Array[0]
@@ -263,7 +264,7 @@ print(most_frequent(games_stats['Formation']))
 
 
 # Which players have the highest pass completion rates for Arsenal?
-players=ps.read_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Players.csv')
+players=ps.read_csv(r'\Players.csv')
 h_pass_rate =players[(players['PAcc']==max(players['PAcc']))]
 h_pass_rate
 
