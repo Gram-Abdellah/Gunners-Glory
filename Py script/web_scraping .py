@@ -18,8 +18,8 @@ table_data = pd.read_html(response.text)
 Players = table_data[1]
 GKs = table_data[0]
 print(table)
-Players.to_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Players.csv')
-GKs.to_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\GoalKappers.csv')
+Players.to_csv(r'\Arsenal 2023\Players.csv')
+GKs.to_csv(r'\GoalKappers.csv')
 
 
 # In[59]:
@@ -29,7 +29,7 @@ rslt = requests.get('https://www.footballcritic.com/arsenal-fc/formations/467')
 table_data = pd.read_html(rslt.text)
 Games = table_data[0]
 print(Games)
-Players.to_csv(r'C:\Users\HP\OneDrive\Documents\Analytics projects topics\Arsenal 2023\Games.csv')
+Players.to_csv(r'\Arsenal 2023\Games.csv')
 
 
 # In[ ]:
